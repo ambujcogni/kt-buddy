@@ -1,0 +1,12 @@
+# All phases. Cloning still uses system `git` via subprocess.
+# Stdlib: subprocess, pathlib, sys, re, urllib, io, zipfile, math, html, json,
+# dataclasses, os, uuid, functools.
+anthropic>=0.40        # Phase 1+ (replaces shelling out to `claude -p`)
+streamlit>=1.30        # Phase 7 (UI) — pulled forward
+reportlab>=4.0         # Phase 2 (PDF report)
+rank-bm25>=0.2         # Phase 3 (Q&A; lexical because HuggingFace is blocked on the corp network)
+tree-sitter>=0.21      # Phase 4 (proper Java AST parsing)
+tree-sitter-java>=0.21 # Phase 4 (Java grammar)
+#
+# Optional / not yet used:
+#   gitpython              # richer repo handling (Phase 5)

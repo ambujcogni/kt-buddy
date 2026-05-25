@@ -1,0 +1,21 @@
+# Runtime artifacts — generated per session inside the container
+output/
+repos/
+
+# Local-only
+.venv/
+.git/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets must come from env vars / Render dashboard, never baked in
+.streamlit/secrets.toml
+.env
+.env.local
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db

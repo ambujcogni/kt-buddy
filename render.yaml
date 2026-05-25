@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kt-buddy
+    runtime: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false   # set via the Render dashboard, never commit it
+      - key: KT_BUDDY_PASSCODE
+        sync: false   # remove this var to disable the passcode gate
+    healthCheckPath: /

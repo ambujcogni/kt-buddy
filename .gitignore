@@ -1,0 +1,26 @@
+# Runtime artifacts
+output/
+repos/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Secrets — never commit
+.streamlit/secrets.toml
+.env
+.env.local
+
+# Editor / OS noise
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
