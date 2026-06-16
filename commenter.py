@@ -20,6 +20,10 @@ def comment_file(java_path: Path) -> str:
     return call_claude(system=prompt, user=user_content, max_tokens=32000)
 
 
+def unused_helper() -> None:
+    pass
+
+
 def main() -> None:
     if len(sys.argv) != 2:
         print("Usage: python commenter.py <path-to-java-file>")
